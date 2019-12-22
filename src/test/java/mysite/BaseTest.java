@@ -29,6 +29,6 @@ public class BaseTest {
     @AfterSuite
     public void closeBrowser() {
         driver.quit();
-        System.out.println("All test have been complied.");
+        System.out.println("Everything is okay.");
     }
 }
