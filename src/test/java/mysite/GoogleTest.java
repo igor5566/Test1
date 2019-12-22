@@ -28,7 +28,6 @@ public class GoogleTest extends BaseTest {
         driver.findElement(By.name("q")).sendKeys(" chemical element", Keys.ENTER);
         WebElement secondResult = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".srg .g:nth-child(1)")));
         wait.until(textToBePresentInElementLocated(By.cssSelector(".srg"),"element"));
-
      }
 
 }
