@@ -29,5 +29,4 @@ public class GoogleTest extends BaseTest {
         WebElement secondResult = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".srg .g:nth-child(1)")));
         wait.until(textToBePresentInElementLocated(By.cssSelector(".srg"),"element"));
      }
-
 }
