@@ -2,23 +2,15 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="FirstSuite" duration-ms="6875" started-at="2019-12-28T17:05:25Z" finished-at="2019-12-28T17:05:32Z">
+  <suite name="FirstSuite" duration-ms="28" started-at="2019-12-29T07:09:03Z" finished-at="2019-12-29T07:09:03Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="6875" started-at="2019-12-28T17:05:25Z" finished-at="2019-12-28T17:05:32Z">
+    <test name="Test1" duration-ms="28" started-at="2019-12-29T07:09:03Z" finished-at="2019-12-29T07:09:03Z">
       <class name="mysite.GoogleTest">
-        <test-method status="PASS" signature="setWebDriver()[pri:0, instance:mysite.GoogleTest@3712b94]" name="setWebDriver" is-config="true" duration-ms="5367" started-at="2019-12-28T19:05:20Z" finished-at="2019-12-28T19:05:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setWebDriver -->
-        <test-method status="PASS" signature="testSearchForm()[pri:0, instance:mysite.GoogleTest@3712b94]" name="testSearchForm" duration-ms="6825" started-at="2019-12-28T19:05:25Z" finished-at="2019-12-28T19:05:32Z">
+        <test-method status="PASS" signature="testSearchForm()[pri:0, instance:mysite.GoogleTest@184f6be2]" name="testSearchForm" duration-ms="11" started-at="2019-12-29T09:09:03Z" finished-at="2019-12-29T09:09:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchForm -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:mysite.GoogleTest@3712b94]" name="closeBrowser" is-config="true" duration-ms="177" started-at="2019-12-28T19:05:32Z" finished-at="2019-12-28T19:05:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
       </class> <!-- mysite.GoogleTest -->
     </test> <!-- Test1 -->
   </suite> <!-- FirstSuite -->
