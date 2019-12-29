@@ -12,23 +12,23 @@ import static org.testng.Assert.assertTrue;
 
 
 public class BaseTest {
-    public static WebDriver driver;
-    public static ChromeOptions options;
-    public static WebDriverWait wait;
-
-    @BeforeSuite
-    public void setWebDriver() {
-        options = new ChromeOptions();
-        options.addArguments("--disable-notifications");
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
-        driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
-        wait = new WebDriverWait(driver,15);
-    }
-
-    @AfterSuite
-    public void closeBrowser() {
-        driver.quit();
-        System.out.println("Some.");
-    }
+//    public static WebDriver driver;
+//    public static ChromeOptions options;
+//    public static WebDriverWait wait;
+//
+//    @BeforeSuite
+//    public void setWebDriver() {
+//        options = new ChromeOptions();
+//        options.addArguments("--disable-notifications");
+//        System.setProperty("webdriver.chrome.driver", "chromedriver");
+//        driver = new ChromeDriver(options);
+//        driver.manage().window().maximize();
+//        wait = new WebDriverWait(driver,15);
+//    }
+//
+//    @AfterSuite
+//    public void closeBrowser() {
+//        driver.quit();
+//        System.out.println("Some.");
+//    }
 }
