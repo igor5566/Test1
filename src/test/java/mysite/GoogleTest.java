@@ -17,11 +17,8 @@ import static org.testng.Assert.*;
 public class GoogleTest extends BaseTest {
     @Test
     public void testSearchForm() {
-        //System.out.println("Hello World!");
         driver.get("http://google.com");
         WebElement searchField = driver.findElement(By.cssSelector("[name='q']"));
-       // driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
         searchField.sendKeys("selenium", Keys.ENTER);
         WebElement firstResult = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".srg .g:nth-child(1)")));
         Assert.assertTrue(firstResult.getText().contains("Selenium"));

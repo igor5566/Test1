@@ -12,9 +12,9 @@ import static org.testng.Assert.assertTrue;
 
 
 public class BaseTest {
-    public static WebDriver driver;
-    public static ChromeOptions options;
-    public static WebDriverWait wait;
+    public WebDriver driver;
+    public ChromeOptions options;
+    public WebDriverWait wait;
 
     @BeforeSuite
     public void setWebDriver() {
@@ -29,6 +29,5 @@ public class BaseTest {
     @AfterSuite
     public void closeBrowser() {
         driver.quit();
-        System.out.println("Some.");
     }
 }
