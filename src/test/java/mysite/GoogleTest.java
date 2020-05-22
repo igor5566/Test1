@@ -17,14 +17,15 @@ import static org.testng.Assert.*;
 public class GoogleTest extends BaseTest {
     @Test
     public void testSearchForm() {
-        driver.get("http://google.com");
-        WebElement searchField = driver.findElement(By.cssSelector("[name='q']"));
-        searchField.sendKeys("selenium", Keys.ENTER);
-        WebElement firstResult = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".srg .g:nth-child(1)")));
-        Assert.assertTrue(firstResult.getText().contains("Selenium"));
+        System.out.println("Hello Jay!");
+        //driver.get("http://google.com");
+        //WebElement searchField = driver.findElement(By.cssSelector("[name='q']"));
+        //searchField.sendKeys("selenium", Keys.ENTER);
+        //WebElement firstResult = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".srg .g:nth-child(1)")));
+        //Assert.assertTrue(firstResult.getText().contains("Selenium"));
 
-        driver.findElement(By.name("q")).sendKeys(" chemical element", Keys.ENTER);
-        WebElement secondResult = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".srg .g:nth-child(1)")));
-        wait.until(textToBePresentInElementLocated(By.cssSelector(".srg"),"element"));
+        //driver.findElement(By.name("q")).sendKeys(" chemical element", Keys.ENTER);
+        //WebElement secondResult = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".srg .g:nth-child(1)")));
+        //wait.until(textToBePresentInElementLocated(By.cssSelector(".srg"),"element"));
      }
 }
